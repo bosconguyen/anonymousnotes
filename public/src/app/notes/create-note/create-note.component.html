@@ -1,0 +1,12 @@
+<fieldset>
+    <form #formData="ngForm" (submit)="createNote(); formData.reset()">
+        <label for="note">Note</label>
+        <input type="text"
+        name="note"
+        minlength="3"
+        [(ngModel)]="newNote.note"
+        #note="ngModel"
+        >
+        <input type="submit" name="" value="Add Note">
+    </form>
+</fieldset>
